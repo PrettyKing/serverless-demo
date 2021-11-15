@@ -1,0 +1,12 @@
+name = "my-app"
+type = "javascript"
+zone_id = "19712561096d26691771aac848df045e"
+account_id = "c501ded7917a10bae1f96f08a27c8af1"
+route = ""
+workers_dev = true
+compatibility_date = "2021-11-13"
+
+[build]
+command = "npm install && npm run build"
+[build.upload]
+format = "service-worker"
