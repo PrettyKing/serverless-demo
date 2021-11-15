@@ -14,7 +14,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|ts|tsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 use: {
                     loader: 'babel-loader',
                     options: {
@@ -30,16 +30,27 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.js', '.ts']
+        alias: {
+            "@assets": path.resolve("src/assets"),
+            "@components": path.resolve("src/components"),
+            "@models": path.resolve("src/models"),
+            "@routes": path.resolve("src/routes"),
+            "@pages": path.resolve("src/pages"),
+            "@utils": path.resolve("src/utils"),
+            "@recoil": path.resolve("src/recoil"),
+            "@hooks": path.resolve("src/hooks"),
+            "@api": path.resolve("src/api"),
+        },
+        extensions: [".js", ".ts", ".tsx", '.jsx']
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "../public/index.html"),
             favicon: path.resolve(__dirname, "../public/favicon.ico")
         }),
-        new WorkboxPlugin.GenerateSW({
-            clientsClaim: true,
-            skipWaiting: true
-        })
+        // new WorkboxPlugin.GenerateSW({
+        //     clientsClaim: true,
+        //     skipWaiting: true
+        // })
     ]
 }

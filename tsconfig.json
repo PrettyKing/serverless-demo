@@ -8,6 +8,8 @@
             "esnext",
             "DOM"
         ],
+        "noImplicitThis": true,
+        "noImplicitAny": true,
         "alwaysStrict": true,
         "strict": true,
         "preserveConstEnums": true,
