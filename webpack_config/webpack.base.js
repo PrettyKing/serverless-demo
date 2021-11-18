@@ -4,12 +4,12 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname, "../src/app.tsx")
+        index: path.resolve(__dirname, "../src/index.ts")
     },
     output: {
         path: path.resolve(__dirname, '../dist/'),
-        filename: '[name].js',
-        publicPath: "/"
+        filename: 'worker.js',
+        // publicPath: "/"
     },
     module: {
         rules: [
@@ -44,10 +44,10 @@ module.exports = {
         extensions: [".js", ".ts", ".tsx", '.jsx']
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "../public/index.html"),
-            favicon: path.resolve(__dirname, "../public/favicon.ico")
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: path.resolve(__dirname, "../public/index.html"),
+        //     favicon: path.resolve(__dirname, "../public/favicon.ico")
+        // }),
         // new WorkboxPlugin.GenerateSW({
         //     clientsClaim: true,
         //     skipWaiting: true

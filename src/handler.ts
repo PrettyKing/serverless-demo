@@ -45,6 +45,8 @@ export async function handleRequest():Promise<Response>{
 
     // Bits.put(String(Date.now(),value)
 
+    console.log(value)
+
     return new Response(value,{
         headers:{
             "Content-Type":"application/json"
