@@ -7,5 +7,8 @@ cache:
   - node_modules
 script:
 - npm install
+- npm install -D @cloudflare/wranger --registry.npmjs.org
 after_script:
 - npm run build
+- echo ${API_KEY} | npx wranger config
+- npx wranger publish

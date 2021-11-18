@@ -6,6 +6,10 @@ route = ""
 workers_dev = true
 compatibility_date = "2021-11-13"
 
+kv_namespaces = [
+    {binding = "Bits",id="27f49a8323584c6e848b5fc7b9747ce6"}
+]
+
 [build]
 command = "npm install && npm run build"
 [build.upload]
