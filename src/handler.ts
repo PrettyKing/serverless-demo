@@ -7,7 +7,7 @@ interface StatusData{
 
 interface Price {
     quote:{
-        USD:{
+        USDT:{
             pricr:number
         }
     }
@@ -39,8 +39,8 @@ export async function handleRequest():Promise<Response>{
     }).then(response => response.json<ResponseData>()).then(data => (data as any).data)
 
     const value = JSON.stringify({
-        [Bid.ETH]:data[Bid.ETH].quote.USD.price,
-        [Bid.BNB]:data[Bid.BNB].quote.USD.price
+        [Bid.ETH]:data[Bid.ETH].quote.USDT.price,
+        [Bid.BNB]:data[Bid.BNB].quote.USDT.price
     })
 
     // Bits.put(String(Date.now(),value)
