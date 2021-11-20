@@ -7,9 +7,9 @@ module.exports = {
         index: path.resolve(__dirname, "../src/index.ts")
     },
     output: {
-        path: path.resolve(__dirname, '../dist/'),
-        filename: 'worker.js',
-        // publicPath: "/"
+        path: path.resolve(__dirname, '../dist/web/'),
+        filename: '[name].js',
+        publicPath: "/"
     },
     module: {
         rules: [
@@ -44,10 +44,10 @@ module.exports = {
         extensions: [".js", ".ts", ".tsx", '.jsx']
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     template: path.resolve(__dirname, "../public/index.html"),
-        //     favicon: path.resolve(__dirname, "../public/favicon.ico")
-        // }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "../public/index.html"),
+            favicon: path.resolve(__dirname, "../public/favicon.ico")
+        }),
         // new WorkboxPlugin.GenerateSW({
         //     clientsClaim: true,
         //     skipWaiting: true

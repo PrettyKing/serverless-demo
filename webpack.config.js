@@ -1,12 +1,5 @@
-// const devWebpackConfig = require("./webpack_config/webpack.development.js")
-// const proWebpackConfig = require('./webpack_config/webpack.production.js')
-// console.log("====>",process.env.NODE_ENV)
-// module.exports = process.env.NODE_ENV == 'development' ?  devWebpackConfig : proWebpackConfig
-
-
 const path = require('path')
-
-module.exports = {
+const dev = {
   entry: './src/index.ts',
   output: {
     filename: 'worker.js',
@@ -30,3 +23,13 @@ module.exports = {
     ],
   },
 }
+
+const webpackConfMap = {
+  development: require("./webpack_config/webpack.development.js"),
+  production: require('./webpack_config/webpack.production.js'),
+  dev 
+}
+
+console.log("======> ",process.env.NODE_ENV)
+
+module.exports = webpackConfMap[process.env.NODE_ENV]

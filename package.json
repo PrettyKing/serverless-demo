@@ -4,12 +4,12 @@
     "description": "Cloudflare worker TypeScript template",
     "main": "dist/worker.js",
     "scripts": {
-        "build": "webpack",
+        "build": "cross-env NODE_ENV=dev webpack",
         "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
         "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
         "test": "jest --config jestconfig.json --verbose",
         "web:dev": "scripty",
-        "web:prod": "cross-env NODE_ENV=production webpack serve"
+        "web:prod": "scripty"
     },
     "author": "author",
     "license": "MIT OR Apache-2.0",
