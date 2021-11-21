@@ -4,10 +4,10 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname, "../src/index.ts")
+        index: path.resolve(__dirname, "../src/app.tsx")
     },
     output: {
-        path: path.resolve(__dirname, '../dist/web/'),
+        path: path.resolve(__dirname, '../dist/'),
         filename: '[name].js',
         publicPath: "/"
     },

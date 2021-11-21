@@ -34,9 +34,9 @@ type PartialUser = Partial<User>;
 //去掉问号
 type PullDownRefresh = Required<Partial<PartialUser>>;
 // 至关于: type PickUser = { id: number; age: number; }
-type PickUser = Pick<User, 'id' | 'age'>;
+type PickUser = Pick<User, 'id' | 'age'>;  //所有的可选
 // 至关于: type PickUser = { age: number; name: string; }
-type OmitUser = Omit<User, 'id' | 'age'>;
+type OmitUser = Omit<User, 'id' | 'age'>; // 所有的必选
 // 至关于: type A = 'a'
 type A = Exclude<'x' | 'a', 'x' | 'y' | 'z'>;
 
