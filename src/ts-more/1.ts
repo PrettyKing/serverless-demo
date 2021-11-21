@@ -1,3 +1,4 @@
+// 开发中常用的一些处理类型的场景
 type A = keyof any;
 
 const a: PropertyKey = ""

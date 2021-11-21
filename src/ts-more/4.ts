@@ -1,3 +1,4 @@
+// 类型获取对象的值
 //typeof obj
 export type GetValue<T> = {
   [P in keyof T]: T[P];

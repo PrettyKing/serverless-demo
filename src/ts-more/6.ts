@@ -1,6 +1,8 @@
+// 这里是react components的 类型说明
+
 // 1.根据经验用关键字猜
 // 2.看pakage.json中的声明文件
-// 3.scode提示
+// 3.vscode提示
 // 4.官方的ghithub demo
 
 type AppProps = {

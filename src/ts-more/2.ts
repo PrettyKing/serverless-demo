@@ -1,3 +1,4 @@
+// 根据接口自动生成 ts类型文件   TODO
 // import Ajv, { JTDDataType } from 'ajv/dist/jtd';
 // import fetch from 'node-fetch';
 // const ajv = new Ajv();

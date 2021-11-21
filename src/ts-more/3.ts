@@ -1,3 +1,4 @@
+// 根据接口返回的ts类型
 import { IDatas } from '../interface/quotesRespon';
 
 // Ajv

@@ -1,3 +1,4 @@
+//这里是与event事件相关的
 const xx = (e: MouseEvent) => {
     console.log(e.preventDefault());
   };

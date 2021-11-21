@@ -1,4 +1,5 @@
 /**
+ * 一些联合类型的基础使用方法，要常来看看
  *  Partial<T>
  *   Required<T>
  *   Readonly<T>
