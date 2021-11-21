@@ -5,7 +5,7 @@
         "incremental": true,
         "importHelpers": true,
         "declaration": true,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false,
         "noUnusedParameters": true,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,

@@ -1,18 +1,18 @@
-import React, { ComponentPropsWithoutRef, CSSProperties } from 'react';
+import { ComponentPropsWithoutRef, CSSProperties } from 'react'
 
 export interface ButtonProps extends ComponentPropsWithoutRef<'button'> {
-  specialProp?: string;
+  specialProp?: string
 }
 
 function Button(props: ButtonProps) {
-  const { specialProp, ...rest } = props;
+  const { specialProp, ...rest } = props
   // eslint-disable-next-line react/jsx-props-no-spreading
-  return <button type="button" {...rest} />;
+  return <button type="button" {...rest} />
 }
 const divStyle: CSSProperties = {
   width: '100px',
-};
-const Box = (props: CSSProperties) => <div style={props} />;
+}
+const Box = (props: CSSProperties) => <div style={props} />
 export default function App(): JSX.Element {
   return (
     <>
@@ -20,5 +20,5 @@ export default function App(): JSX.Element {
       {/* eslint-disable-next-line react/jsx-props-no-spreading */}
       <Box {...divStyle} />
     </>
-  );
+  )
 }

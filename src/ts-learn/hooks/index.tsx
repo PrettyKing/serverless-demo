@@ -26,3 +26,5 @@ const Demo: FC = () => {
   );
 };
 console.log('Demo: ', Demo);
+
+export default Demo

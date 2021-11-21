@@ -29,10 +29,10 @@
 import { IDatas } from './interface/quotesRespon'
 
 // Ajv
-const obj = {
-    ETH: 0,
-    BNB: 0,
-}
+// const obj = {
+//     ETH: 0,
+//     BNB: 0,
+// }
 const dir = {
     ETH: 1027,
     BNB: 1839,
