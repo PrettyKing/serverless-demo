@@ -1,5 +1,25 @@
 {
     "compilerOptions": {
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "incremental": true,
+        "importHelpers": true,
+        "declaration": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "allowJs": false,
+        "forceConsistentCasingInFileNames": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "experimentalDecorators": true,
+        "rootDir": "",
+        "baseUrl": "src",
+        "paths": {
+            "@components/*": [
+                "components/*"
+            ]
+        },
         "jsx": "react-jsx",
         "outDir": "./dist",
         "module": "commonjs",
@@ -24,7 +44,8 @@
     },
     "include": [
         "src",
-        "index.d.ts"
+        "index.d.ts",
+        "tests"
     ],
     "exclude": [
         "node_modules",

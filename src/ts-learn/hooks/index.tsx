@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import  { FC } from 'react';
 import useAsyncTask from './useAsyncTask';
 
 function myApiRequest(data: string) {

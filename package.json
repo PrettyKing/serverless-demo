@@ -9,7 +9,9 @@
         "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
         "test": "jest --config jestconfig.json --verbose",
         "web:dev": "scripty",
-        "web:prod": "scripty"
+        "web:prod": "scripty",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook"
     },
     "author": "author",
     "license": "MIT OR Apache-2.0",
@@ -22,7 +24,7 @@
     },
     "devDependencies": {
         "@ant-design/icons": "^4.5.0",
-        "@babel/core": "^7.13.10",
+        "@babel/core": "^7.16.0",
         "@babel/plugin-proposal-class-properties": "^7.13.0",
         "@babel/plugin-syntax-dynamic-import": "^7.8.3",
         "@babel/plugin-transform-runtime": "^7.13.10",
@@ -98,6 +100,11 @@
         "workbox-webpack-plugin": "^6.3.0"
     },
     "dependencies": {
+        "@storybook/addon-actions": "^6.3.12",
+        "@storybook/addon-essentials": "^6.3.12",
+        "@storybook/addon-links": "^6.3.12",
+        "@storybook/react": "^6.3.12",
+        "@swc/core": "^1.2.111",
         "scripty": "^2.0.0"
     }
 }
