@@ -10,6 +10,7 @@
         "test": "jest --config jestconfig.json --verbose",
         "web:dev": "scripty",
         "web:prod": "scripty",
+        "win:dev": "cross-env NODE_ENV=development webpack serve",
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook"
     },
@@ -39,6 +40,7 @@
         "@testing-library/user-event": "^13.2.1",
         "@types/jest": "^27.0.2",
         "@types/react-dom": "^17.0.11",
+        "@types/react-router-dom": "^5.3.2",
         "@types/service-worker-mock": "^2.0.1",
         "@typescript-eslint/eslint-plugin": "^4.16.1",
         "@typescript-eslint/parser": "^4.16.1",
@@ -83,7 +85,7 @@
         "react-file-base64": "^1.0.3",
         "react-redux": "^7.2.4",
         "react-router": "^5.2.0",
-        "react-router-dom": "^5.2.0",
+        "react-router-dom": "^5.0.2",
         "redux": "^4.1.1",
         "redux-thunk": "^2.3.0",
         "service-worker-mock": "^2.0.5",
@@ -105,6 +107,7 @@
         "@storybook/addon-links": "^6.3.12",
         "@storybook/react": "^6.3.12",
         "@swc/core": "^1.2.111",
+        "recoil": "^0.5.2",
         "scripty": "^2.0.0"
     }
 }

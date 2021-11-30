@@ -40,6 +40,9 @@ module.exports = {
             "@recoil": path.resolve("src/recoil"),
             "@hooks": path.resolve("src/hooks"),
             "@api": path.resolve("src/api"),
+            '@components': path.resolve('src/web/components'),
+            '@atoms': path.resolve('src/web/recoil/atoms'),
+            '@selectors': path.resolve('src/web/recoil/selectors'),
         },
         extensions: [".js", ".ts", ".tsx", '.jsx']
     },
